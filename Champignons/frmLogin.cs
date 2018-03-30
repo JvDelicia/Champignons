@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace Champignons {
 	public partial class frmLogin : Form {
@@ -20,7 +21,7 @@ namespace Champignons {
 		}
 
 		private void frmLogin_Load( object sender, EventArgs e ) {
-
+			txtUser.Focus();
 		}
 
 		private void btnLeave_Click( object sender, EventArgs e ) {
@@ -33,56 +34,92 @@ namespace Champignons {
 
 		private void btnLog_Click( object sender, EventArgs e ) {
 			if ( txtUser.Text == "" ) {
-				MessageBox.Show( "Você precisa digitar um usuário!", "Atenção!", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1 );
+				MessageBox.Show( Properties.str.UserError, Properties.str.Atent, MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1 );
 				txtUser.Focus();
 			} else if ( txtPass.Text == "" ) {
-				MessageBox.Show( "Você precisa digitar uma senha!", "Atenção!", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1 );
+				MessageBox.Show( Properties.str.PassError, Properties.str.Atent, MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1 );
 			} else {
 				LogIn();
 			}
 		}
 
-		private void LogIn() {
-			frmMain Main = new frmMain();
-			if ( ValLogIn() ) {
-				Visible = false;
-				Main.ShowDialog();
-			} else {
-				MessageBox.Show( "O Usuário/Senha está incorreto!", "Erro!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1 );
+		private void txtUser_KeyPress( object sender, KeyPressEventArgs e ) {
+			if ( e.KeyChar == 13 ) {
+				if ( txtUser.Text == "" ) {
+					MessageBox.Show( Properties.str.UserError, Properties.str.Atent, MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1 );
+					txtUser.Focus();
+				} else if ( txtPass.Text == "" ) {
+					MessageBox.Show( Properties.str.PassError, Properties.str.Atent, MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1 );
+				} else {
+					LogIn();
+				}
 			}
 		}
 
-		private bool ValLogIn() {
-			SqlConnection sqlConn = null;
-			string _Sql = string.Empty;
+		private void txtPass_KeyPress( object sender, KeyPressEventArgs e ) {
+			if ( e.KeyChar == 13 ) {
+				if ( txtUser.Text == "" ) {
+					MessageBox.Show( Properties.str.UserError, Properties.str.Atent, MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1 );
+					txtUser.Focus();
+				} else if ( txtPass.Text == "" ) {
+					MessageBox.Show( Properties.str.PassError, Properties.str.Atent, MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1 );
+				} else {
+					LogIn();
+				}
+			}
+		}
 
-			sqlConn = new SqlConnection( Properties.Settings.Default.cs1 );
+		private void LogIn() {
+			frmMain Main = new frmMain();
+			if ( ValLogIn() == 1 ) {
+				Visible = false;
+				Main.ShowDialog();
+			} else if ( ValLogIn() == 2 ) {
+				MessageBox.Show( Properties.str.LogError, Properties.str.Error, MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1 );
+			}
+		}
+
+		private byte ValLogIn() {
+			string sql = string.Empty, sconn = string.Empty;
 			string usu, pwd;
+
+			sconn = "server=mysql.hostinger.com.br;uid=u477364118_champ;pwd=champpass99;database=u477364118_champ;";
+
+			MySqlConnection conn = new MySqlConnection( sconn );
+
+			try {
+				conn.Open();
+				conn.Close();
+			} catch ( MySql.Data.MySqlClient.MySqlException ) {
+				MessageBox.Show( Properties.str.ConnError, Properties.str.Error, MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1 );
+			}
 
 			usu = txtUser.Text;
 			pwd = txtPass.Text;
-
-			_Sql = "SELECT COUNT(CodFnc) FROM tbFnc WHERE UsernameFnc = @User and PssFnc = @Pass";
-
 			try {
-				sqlConn.Open();
-			} catch {
-				MessageBox.Show( "Ocorreu um erro em conectar. A conexão ao Banco de Dados não funcionou!", "Erro!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1 );
+				conn.Open();
+				sql = "SELECT COUNT(Cod) FROM tbUser WHERE Usr = @User and Pss = @Pass";
+
+				MySqlCommand cmd = new MySqlCommand( sql, conn );
+
+				cmd.Parameters.AddWithValue( "@User", MySqlDbType.VarChar ).Value = usu;
+				cmd.Parameters.AddWithValue( "@Pass", MySqlDbType.VarChar ).Value = pwd;
+
+				int v = ( int ) cmd.ExecuteScalar();
+				if ( v > 0 ) {
+					conn.Close();
+					return 1;
+				} else {
+					conn.Close();
+					return 2;
+				}
+			} catch (Exception e) {
+				MessageBox.Show( e.Message, Properties.str.Error, MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1 );
+				try { conn.Close(); } catch { }
+				return 0;
 			}
-
-			SqlCommand cmd = new SqlCommand( _Sql, sqlConn );
-
-			cmd.Parameters.Add( "@User", SqlDbType.VarChar ).Value = usu;
-			cmd.Parameters.Add( "@Pass", SqlDbType.VarChar ).Value = pwd;
-
-			int v = ( int ) cmd.ExecuteScalar();
-
-			if ( v > 0 ) {
-				return true;
-			} else {
-				return false;
-			}
-			sqlConn.Close();
 		}
+
+		private void btnLog_KeyPress( object sender, KeyPressEventArgs e ) { }
 	}
 }

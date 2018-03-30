@@ -67,6 +67,7 @@
 			this.txtUser.SelectionStart = 0;
 			this.txtUser.TabStop = false;
 			this.txtUser.UseSystemPasswordChar = false;
+			this.txtUser.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtUser_KeyPress);
 			// 
 			// txtPass
 			// 
@@ -94,6 +95,7 @@
 			this.btnLog.Primary = true;
 			this.btnLog.UseVisualStyleBackColor = true;
 			this.btnLog.Click += new System.EventHandler(this.btnLog_Click);
+			this.btnLog.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.btnLog_KeyPress);
 			// 
 			// btnLeave
 			// 
