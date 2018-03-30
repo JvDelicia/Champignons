@@ -83,20 +83,14 @@ namespace Champignons {
 			string sql = string.Empty, sconn = string.Empty;
 			string usu, pwd;
 
-			sconn = "server=mysql.hostinger.com.br;uid=u477364118_champ;pwd=champpass99;database=u477364118_champ;";
+			sconn = "server=sql46.main-hosting.eu;port=3306;uid=u477364118_champ;pwd=champpass99;database=u477364118_champ;";
 
 			MySqlConnection conn = new MySqlConnection( sconn );
 
 			try {
-				conn.Open();
-				conn.Close();
-			} catch ( MySql.Data.MySqlClient.MySqlException ) {
-				MessageBox.Show( Properties.str.ConnError, Properties.str.Error, MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1 );
-			}
+				usu = txtUser.Text;
+				pwd = txtPass.Text;
 
-			usu = txtUser.Text;
-			pwd = txtPass.Text;
-			try {
 				conn.Open();
 				sql = "SELECT COUNT(Cod) FROM tbUser WHERE Usr = @User and Pss = @Pass";
 
@@ -113,7 +107,8 @@ namespace Champignons {
 					conn.Close();
 					return 2;
 				}
-			} catch (Exception e) {
+			} catch ( Exception e ) {
+				MessageBox.Show( Properties.str.ConnError, Properties.str.Error, MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1 );
 				MessageBox.Show( e.Message, Properties.str.Error, MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1 );
 				try { conn.Close(); } catch { }
 				return 0;
