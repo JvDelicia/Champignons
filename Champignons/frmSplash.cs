@@ -16,6 +16,7 @@ namespace Champignons
 		public frmSplash()
 		{
 			InitializeComponent();
+			lblDir.Text = Properties.str.Rights;
 		}
 
 		private void label1_Click( object sender, EventArgs e )
