@@ -142,153 +142,153 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>4</value>
   </data>
-  <data name="lblUser.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="dvsLog.Location" type="System.Drawing.Point, System.Drawing">
+    <value>226, 0</value>
   </data>
-  <data name="lblUser.Location" type="System.Drawing.Point, System.Drawing">
-    <value>273, 40</value>
+  <data name="dvsLog.Size" type="System.Drawing.Size, System.Drawing">
+    <value>11, 239</value>
   </data>
-  <data name="lblUser.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 13</value>
+  <data name="dvsLog.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
   </data>
-  <data name="lblUser.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+  <data name="dvsLog.Text" xml:space="preserve">
+    <value>materialDivider1</value>
   </data>
-  <data name="lblUser.Text" xml:space="preserve">
-    <value>label1</value>
+  <data name="&gt;&gt;dvsLog.Name" xml:space="preserve">
+    <value>dvsLog</value>
   </data>
-  <data name="&gt;&gt;lblUser.Name" xml:space="preserve">
-    <value>lblUser</value>
+  <data name="&gt;&gt;dvsLog.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialDivider, MaterialSkin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="&gt;&gt;lblUser.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblUser.Parent" xml:space="preserve">
+  <data name="&gt;&gt;dvsLog.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;lblUser.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;dvsLog.ZOrder" xml:space="preserve">
     <value>5</value>
-  </data>
-  <data name="lblPass.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lblPass.Location" type="System.Drawing.Point, System.Drawing">
-    <value>273, 89</value>
-  </data>
-  <data name="lblPass.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 13</value>
-  </data>
-  <data name="lblPass.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="lblPass.Text" xml:space="preserve">
-    <value>label1</value>
-  </data>
-  <data name="&gt;&gt;lblPass.Name" xml:space="preserve">
-    <value>lblPass</value>
-  </data>
-  <data name="&gt;&gt;lblPass.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblPass.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;lblPass.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="btnLeave.Location" type="System.Drawing.Point, System.Drawing">
-    <value>276, 166</value>
-  </data>
-  <data name="btnLeave.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
-  </data>
-  <data name="btnLeave.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="btnLeave.Text" xml:space="preserve">
-    <value>button1</value>
-  </data>
-  <data name="&gt;&gt;btnLeave.Name" xml:space="preserve">
-    <value>btnLeave</value>
-  </data>
-  <data name="&gt;&gt;btnLeave.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnLeave.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;btnLeave.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="btnLog.Location" type="System.Drawing.Point, System.Drawing">
-    <value>394, 166</value>
-  </data>
-  <data name="btnLog.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
-  </data>
-  <data name="btnLog.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="btnLog.Text" xml:space="preserve">
-    <value>button1</value>
-  </data>
-  <data name="&gt;&gt;btnLog.Name" xml:space="preserve">
-    <value>btnLog</value>
-  </data>
-  <data name="&gt;&gt;btnLog.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnLog.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;btnLog.ZOrder" xml:space="preserve">
-    <value>2</value>
   </data>
   <data name="txtUser.Location" type="System.Drawing.Point, System.Drawing">
-    <value>276, 57</value>
+    <value>262, 66</value>
+  </data>
+  <data name="txtUser.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>199, 23</value>
+  </data>
+  <data name="txtUser.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>199, 23</value>
   </data>
   <data name="txtUser.Size" type="System.Drawing.Size, System.Drawing">
-    <value>193, 20</value>
+    <value>199, 23</value>
   </data>
   <data name="txtUser.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
+    <value>4</value>
   </data>
   <data name="&gt;&gt;txtUser.Name" xml:space="preserve">
     <value>txtUser</value>
   </data>
   <data name="&gt;&gt;txtUser.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>MaterialSkin.Controls.MaterialSingleLineTextField, MaterialSkin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;txtUser.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
   <data name="&gt;&gt;txtUser.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>3</value>
   </data>
   <data name="txtPass.Location" type="System.Drawing.Point, System.Drawing">
-    <value>276, 105</value>
+    <value>262, 109</value>
   </data>
-  <data name="txtPass.PasswordChar" type="System.Char, mscorlib" xml:space="preserve">
-    <value>*</value>
+  <data name="txtPass.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>199, 23</value>
+  </data>
+  <data name="txtPass.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>199, 23</value>
   </data>
   <data name="txtPass.Size" type="System.Drawing.Size, System.Drawing">
-    <value>193, 20</value>
+    <value>199, 23</value>
   </data>
   <data name="txtPass.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
+    <value>5</value>
   </data>
   <data name="&gt;&gt;txtPass.Name" xml:space="preserve">
     <value>txtPass</value>
   </data>
   <data name="&gt;&gt;txtPass.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>MaterialSkin.Controls.MaterialSingleLineTextField, MaterialSkin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;txtPass.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
   <data name="&gt;&gt;txtPass.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="btnLog.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="btnLog.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
+  </data>
+  <data name="btnLog.Location" type="System.Drawing.Point, System.Drawing">
+    <value>275, 153</value>
+  </data>
+  <data name="btnLog.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>61, 36</value>
+  </data>
+  <data name="btnLog.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>61, 36</value>
+  </data>
+  <data name="btnLog.Size" type="System.Drawing.Size, System.Drawing">
+    <value>61, 36</value>
+  </data>
+  <data name="btnLog.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;btnLog.Name" xml:space="preserve">
+    <value>btnLog</value>
+  </data>
+  <data name="&gt;&gt;btnLog.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialRaisedButton, MaterialSkin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;btnLog.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnLog.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btnLeave.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="btnLeave.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
+  </data>
+  <data name="btnLeave.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnLeave.Location" type="System.Drawing.Point, System.Drawing">
+    <value>386, 153</value>
+  </data>
+  <data name="btnLeave.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>62, 36</value>
+  </data>
+  <data name="btnLeave.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>62, 36</value>
+  </data>
+  <data name="btnLeave.Size" type="System.Drawing.Size, System.Drawing">
+    <value>62, 36</value>
+  </data>
+  <data name="btnLeave.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;btnLeave.Name" xml:space="preserve">
+    <value>btnLeave</value>
+  </data>
+  <data name="&gt;&gt;btnLeave.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialRaisedButton, MaterialSkin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;btnLeave.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnLeave.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -296,9 +296,6 @@
   </metadata>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>496, 232</value>
-  </data>
-  <data name="$this.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

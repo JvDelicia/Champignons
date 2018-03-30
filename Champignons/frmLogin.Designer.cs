@@ -29,12 +29,11 @@
 		{
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLogin));
 			this.pictureBox1 = new System.Windows.Forms.PictureBox();
-			this.lblUser = new System.Windows.Forms.Label();
-			this.lblPass = new System.Windows.Forms.Label();
-			this.btnLeave = new System.Windows.Forms.Button();
-			this.btnLog = new System.Windows.Forms.Button();
-			this.txtUser = new System.Windows.Forms.TextBox();
-			this.txtPass = new System.Windows.Forms.TextBox();
+			this.dvsLog = new MaterialSkin.Controls.MaterialDivider();
+			this.txtUser = new MaterialSkin.Controls.MaterialSingleLineTextField();
+			this.txtPass = new MaterialSkin.Controls.MaterialSingleLineTextField();
+			this.btnLog = new MaterialSkin.Controls.MaterialRaisedButton();
+			this.btnLeave = new MaterialSkin.Controls.MaterialRaisedButton();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
 			this.SuspendLayout();
 			// 
@@ -45,54 +44,83 @@
 			this.pictureBox1.Name = "pictureBox1";
 			this.pictureBox1.TabStop = false;
 			// 
-			// lblUser
+			// dvsLog
 			// 
-			resources.ApplyResources(this.lblUser, "lblUser");
-			this.lblUser.Name = "lblUser";
+			this.dvsLog.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.dvsLog.Depth = 0;
+			resources.ApplyResources(this.dvsLog, "dvsLog");
+			this.dvsLog.MouseState = MaterialSkin.MouseState.HOVER;
+			this.dvsLog.Name = "dvsLog";
 			// 
-			// lblPass
+			// txtUser
 			// 
-			resources.ApplyResources(this.lblPass, "lblPass");
-			this.lblPass.Name = "lblPass";
+			this.txtUser.Cursor = System.Windows.Forms.Cursors.IBeam;
+			this.txtUser.Depth = 0;
+			this.txtUser.Hint = "";
+			resources.ApplyResources(this.txtUser, "txtUser");
+			this.txtUser.MaxLength = 32767;
+			this.txtUser.MouseState = MaterialSkin.MouseState.HOVER;
+			this.txtUser.Name = "txtUser";
+			this.txtUser.PasswordChar = '\0';
+			this.txtUser.SelectedText = "";
+			this.txtUser.SelectionLength = 0;
+			this.txtUser.SelectionStart = 0;
+			this.txtUser.TabStop = false;
+			this.txtUser.UseSystemPasswordChar = false;
 			// 
-			// btnLeave
+			// txtPass
 			// 
-			resources.ApplyResources(this.btnLeave, "btnLeave");
-			this.btnLeave.Name = "btnLeave";
-			this.btnLeave.UseVisualStyleBackColor = true;
+			this.txtPass.Cursor = System.Windows.Forms.Cursors.IBeam;
+			this.txtPass.Depth = 0;
+			this.txtPass.Hint = "";
+			resources.ApplyResources(this.txtPass, "txtPass");
+			this.txtPass.MaxLength = 32767;
+			this.txtPass.MouseState = MaterialSkin.MouseState.HOVER;
+			this.txtPass.Name = "txtPass";
+			this.txtPass.PasswordChar = '\0';
+			this.txtPass.SelectedText = "";
+			this.txtPass.SelectionLength = 0;
+			this.txtPass.SelectionStart = 0;
+			this.txtPass.TabStop = false;
+			this.txtPass.UseSystemPasswordChar = true;
 			// 
 			// btnLog
 			// 
 			resources.ApplyResources(this.btnLog, "btnLog");
+			this.btnLog.Depth = 0;
+			this.btnLog.Icon = null;
+			this.btnLog.MouseState = MaterialSkin.MouseState.HOVER;
 			this.btnLog.Name = "btnLog";
+			this.btnLog.Primary = true;
 			this.btnLog.UseVisualStyleBackColor = true;
+			this.btnLog.Click += new System.EventHandler(this.btnLog_Click);
 			// 
-			// txtUser
+			// btnLeave
 			// 
-			this.txtUser.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-			resources.ApplyResources(this.txtUser, "txtUser");
-			this.txtUser.Name = "txtUser";
-			// 
-			// txtPass
-			// 
-			resources.ApplyResources(this.txtPass, "txtPass");
-			this.txtPass.Name = "txtPass";
+			resources.ApplyResources(this.btnLeave, "btnLeave");
+			this.btnLeave.Depth = 0;
+			this.btnLeave.Icon = null;
+			this.btnLeave.MouseState = MaterialSkin.MouseState.HOVER;
+			this.btnLeave.Name = "btnLeave";
+			this.btnLeave.Primary = true;
+			this.btnLeave.UseVisualStyleBackColor = true;
+			this.btnLeave.Click += new System.EventHandler(this.btnLeave_Click);
 			// 
 			// frmLogin
 			// 
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
 			this.BackColor = System.Drawing.Color.LightCoral;
 			resources.ApplyResources(this, "$this");
+			this.Controls.Add(this.btnLeave);
+			this.Controls.Add(this.btnLog);
 			this.Controls.Add(this.txtPass);
 			this.Controls.Add(this.txtUser);
-			this.Controls.Add(this.btnLog);
-			this.Controls.Add(this.btnLeave);
-			this.Controls.Add(this.lblPass);
-			this.Controls.Add(this.lblUser);
 			this.Controls.Add(this.pictureBox1);
+			this.Controls.Add(this.dvsLog);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
 			this.MaximizeBox = false;
 			this.Name = "frmLogin";
+			this.Load += new System.EventHandler(this.frmLogin_Load);
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
@@ -102,11 +130,10 @@
 		#endregion
 
 		private System.Windows.Forms.PictureBox pictureBox1;
-		private System.Windows.Forms.Label lblUser;
-		private System.Windows.Forms.Label lblPass;
-		private System.Windows.Forms.Button btnLeave;
-		private System.Windows.Forms.Button btnLog;
-		private System.Windows.Forms.TextBox txtUser;
-		private System.Windows.Forms.TextBox txtPass;
+		private MaterialSkin.Controls.MaterialDivider dvsLog;
+		private MaterialSkin.Controls.MaterialSingleLineTextField txtUser;
+		private MaterialSkin.Controls.MaterialSingleLineTextField txtPass;
+		private MaterialSkin.Controls.MaterialRaisedButton btnLog;
+		private MaterialSkin.Controls.MaterialRaisedButton btnLeave;
 	}
 }
