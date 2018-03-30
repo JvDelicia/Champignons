@@ -30,7 +30,7 @@
 			this.components = new System.ComponentModel.Container();
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmSplash));
 			this.picLogo = new System.Windows.Forms.PictureBox();
-			this.tmrSnd = new System.Windows.Forms.Timer(this.components);
+			this.tmrSplash = new System.Windows.Forms.Timer(this.components);
 			this.pictureBox1 = new System.Windows.Forms.PictureBox();
 			this.lblDir = new System.Windows.Forms.Label();
 			((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
@@ -44,10 +44,16 @@
 			this.picLogo.Name = "picLogo";
 			this.picLogo.TabStop = false;
 			// 
+			// tmrSplash
+			// 
+			this.tmrSplash.Enabled = true;
+			this.tmrSplash.Interval = 10000;
+			this.tmrSplash.Tick += new System.EventHandler(this.tmrSplash_Tick);
+			// 
 			// pictureBox1
 			// 
 			resources.ApplyResources(this.pictureBox1, "pictureBox1");
-			this.pictureBox1.Image = global::Champignons.Properties.Resources.Load;
+			this.pictureBox1.Image = global::Champignons.Properties.Resources.kitty;
 			this.pictureBox1.Name = "pictureBox1";
 			this.pictureBox1.TabStop = false;
 			// 
@@ -61,16 +67,17 @@
 			// 
 			resources.ApplyResources(this, "$this");
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.BackColor = System.Drawing.SystemColors.MenuHighlight;
+			this.BackColor = System.Drawing.Color.White;
 			this.ControlBox = false;
 			this.Controls.Add(this.lblDir);
-			this.Controls.Add(this.pictureBox1);
 			this.Controls.Add(this.picLogo);
+			this.Controls.Add(this.pictureBox1);
 			this.Cursor = System.Windows.Forms.Cursors.WaitCursor;
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
 			this.MaximizeBox = false;
 			this.MinimizeBox = false;
 			this.Name = "frmSplash";
+			this.Load += new System.EventHandler(this.frmSplash_Load);
 			((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
 			this.ResumeLayout(false);
@@ -81,7 +88,7 @@
 		#endregion
 
 		private System.Windows.Forms.PictureBox picLogo;
-		private System.Windows.Forms.Timer tmrSnd;
+		private System.Windows.Forms.Timer tmrSplash;
 		private System.Windows.Forms.PictureBox pictureBox1;
 		private System.Windows.Forms.Label lblDir;
 	}

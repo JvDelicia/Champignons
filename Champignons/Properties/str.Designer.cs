@@ -61,11 +61,137 @@ namespace Champignons.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Atention!.
+        /// </summary>
+        public static string Atent {
+            get {
+                return ResourceManager.GetString("Atent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cancel.
+        /// </summary>
+        public static string Cancel {
+            get {
+                return ResourceManager.GetString("Cancel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to You really want to leave?.
+        /// </summary>
+        public static string ConfLeave {
+            get {
+                return ResourceManager.GetString("ConfLeave", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Error to connect. The database connection didn&apos;t work!.
+        /// </summary>
+        public static string ConnError {
+            get {
+                return ResourceManager.GetString("ConnError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Error!.
+        /// </summary>
+        public static string Error {
+            get {
+                return ResourceManager.GetString("Error", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Help.
+        /// </summary>
+        public static string Help {
+            get {
+                return ResourceManager.GetString("Help", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Leave.
+        /// </summary>
+        public static string Leave {
+            get {
+                return ResourceManager.GetString("Leave", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Login.
+        /// </summary>
+        public static string Log {
+            get {
+                return ResourceManager.GetString("Log", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Wrong username or password!.
+        /// </summary>
+        public static string LogError {
+            get {
+                return ResourceManager.GetString("LogError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Password.
+        /// </summary>
+        public static string Pass {
+            get {
+                return ResourceManager.GetString("Pass", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to You must type your password!.
+        /// </summary>
+        public static string PassError {
+            get {
+                return ResourceManager.GetString("PassError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Leave?.
+        /// </summary>
+        public static string QuestLeave {
+            get {
+                return ResourceManager.GetString("QuestLeave", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Champignons © 2018 ALL RIGHTS RESERVERD.
         /// </summary>
         public static string Rights {
             get {
                 return ResourceManager.GetString("Rights", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Username.
+        /// </summary>
+        public static string User {
+            get {
+                return ResourceManager.GetString("User", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to You must type your username!.
+        /// </summary>
+        public static string UserError {
+            get {
+                return ResourceManager.GetString("UserError", resourceCulture);
             }
         }
     }

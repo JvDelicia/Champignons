@@ -117,7 +117,49 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Atent" xml:space="preserve">
+    <value>Atention!</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="ConfLeave" xml:space="preserve">
+    <value>You really want to leave?</value>
+  </data>
+  <data name="ConnError" xml:space="preserve">
+    <value>Error to connect. The database connection didn't work!</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Error!</value>
+  </data>
+  <data name="Help" xml:space="preserve">
+    <value>Help</value>
+  </data>
+  <data name="Leave" xml:space="preserve">
+    <value>Leave</value>
+  </data>
+  <data name="Log" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="LogError" xml:space="preserve">
+    <value>Wrong username or password!</value>
+  </data>
+  <data name="Pass" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="PassError" xml:space="preserve">
+    <value>You must type your password!</value>
+  </data>
+  <data name="QuestLeave" xml:space="preserve">
+    <value>Leave?</value>
+  </data>
   <data name="Rights" xml:space="preserve">
     <value>Champignons © 2018 ALL RIGHTS RESERVERD</value>
+  </data>
+  <data name="User" xml:space="preserve">
+    <value>Username</value>
+  </data>
+  <data name="UserError" xml:space="preserve">
+    <value>You must type your username!</value>
   </data>
 </root>
