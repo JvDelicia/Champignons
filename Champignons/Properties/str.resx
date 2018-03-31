@@ -144,6 +144,39 @@
   <data name="LogError" xml:space="preserve">
     <value>Wrong username or password!</value>
   </data>
+  <data name="Lvl1" xml:space="preserve">
+    <value>Level One</value>
+  </data>
+  <data name="Lvl10" xml:space="preserve">
+    <value>Level Ten</value>
+  </data>
+  <data name="Lvl2" xml:space="preserve">
+    <value>Level Two</value>
+  </data>
+  <data name="Lvl3" xml:space="preserve">
+    <value>Level 2+1=TREE</value>
+  </data>
+  <data name="Lvl4" xml:space="preserve">
+    <value>Level Four</value>
+  </data>
+  <data name="Lvl5" xml:space="preserve">
+    <value>Level Five</value>
+  </data>
+  <data name="Lvl6" xml:space="preserve">
+    <value>Level Six</value>
+  </data>
+  <data name="Lvl7" xml:space="preserve">
+    <value>Level Seven</value>
+  </data>
+  <data name="Lvl8" xml:space="preserve">
+    <value>Level Eight</value>
+  </data>
+  <data name="Lvl9" xml:space="preserve">
+    <value>Level Nine</value>
+  </data>
+  <data name="LvlEnd" xml:space="preserve">
+    <value>Level Zero</value>
+  </data>
   <data name="Pass" xml:space="preserve">
     <value>Password</value>
   </data>
@@ -161,5 +194,44 @@
   </data>
   <data name="UserError" xml:space="preserve">
     <value>You must type your username!</value>
+  </data>
+  <data name="Wel1" xml:space="preserve">
+    <value>Welcome, </value>
+  </data>
+  <data name="Wel10" xml:space="preserve">
+    <value>I think you can go now.</value>
+  </data>
+  <data name="Wel11" xml:space="preserve">
+    <value>Finally, fuck me!</value>
+  </data>
+  <data name="Wel12" xml:space="preserve">
+    <value>Finally, fuck you!!!</value>
+  </data>
+  <data name="Wel13" xml:space="preserve">
+    <value>OH MY GOWD, FUCK YOU PIECE OF SHIT, GO AWAY OF HERE!</value>
+  </data>
+  <data name="Wel2" xml:space="preserve">
+    <value>It's your birthday and that's beautifull!</value>
+  </data>
+  <data name="Wel3" xml:space="preserve">
+    <value>Here, I preper a little game for you, the only thing you need to do is win the game.</value>
+  </data>
+  <data name="Wel4" xml:space="preserve">
+    <value>If you reach the end, you will receive something, but you, and I, don't know what.</value>
+  </data>
+  <data name="Wel5" xml:space="preserve">
+    <value>If you don't, go fuck yourself, ok?</value>
+  </data>
+  <data name="Wel6" xml:space="preserve">
+    <value>Are you ready to go?</value>
+  </data>
+  <data name="Wel7" xml:space="preserve">
+    <value>Ok, it's loading...</value>
+  </data>
+  <data name="Wel8" xml:space="preserve">
+    <value>Ohh, fuck, I almost forgot.</value>
+  </data>
+  <data name="Wel9" xml:space="preserve">
+    <value>For each 'level' you'll have a tip, but it's only appers if you click on the button in the screen.</value>
   </data>
 </root>

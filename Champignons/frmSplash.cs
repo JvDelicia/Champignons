@@ -23,7 +23,7 @@ namespace Champignons {
 
 		private void frmSplash_Load( object sender, EventArgs e ) {
 			SoundPlayer snpLoad = new SoundPlayer( Properties.Resources.sndLoad );
-			snpLoad.Play();
+			//snpLoad.Play();
 		}
 
 		private void tmrSplash_Tick( object sender, EventArgs e ) {

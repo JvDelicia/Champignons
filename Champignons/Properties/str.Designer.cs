@@ -142,6 +142,105 @@ namespace Champignons.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Level One.
+        /// </summary>
+        public static string Lvl1 {
+            get {
+                return ResourceManager.GetString("Lvl1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Level Ten.
+        /// </summary>
+        public static string Lvl10 {
+            get {
+                return ResourceManager.GetString("Lvl10", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Level Two.
+        /// </summary>
+        public static string Lvl2 {
+            get {
+                return ResourceManager.GetString("Lvl2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Level 2+1=TREE.
+        /// </summary>
+        public static string Lvl3 {
+            get {
+                return ResourceManager.GetString("Lvl3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Level Four.
+        /// </summary>
+        public static string Lvl4 {
+            get {
+                return ResourceManager.GetString("Lvl4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Level Five.
+        /// </summary>
+        public static string Lvl5 {
+            get {
+                return ResourceManager.GetString("Lvl5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Level Six.
+        /// </summary>
+        public static string Lvl6 {
+            get {
+                return ResourceManager.GetString("Lvl6", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Level Seven.
+        /// </summary>
+        public static string Lvl7 {
+            get {
+                return ResourceManager.GetString("Lvl7", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Level Eight.
+        /// </summary>
+        public static string Lvl8 {
+            get {
+                return ResourceManager.GetString("Lvl8", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Level Nine.
+        /// </summary>
+        public static string Lvl9 {
+            get {
+                return ResourceManager.GetString("Lvl9", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Level Zero.
+        /// </summary>
+        public static string LvlEnd {
+            get {
+                return ResourceManager.GetString("LvlEnd", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Password.
         /// </summary>
         public static string Pass {
@@ -192,6 +291,123 @@ namespace Champignons.Properties {
         public static string UserError {
             get {
                 return ResourceManager.GetString("UserError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Welcome, .
+        /// </summary>
+        public static string Wel1 {
+            get {
+                return ResourceManager.GetString("Wel1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to I think you can go now..
+        /// </summary>
+        public static string Wel10 {
+            get {
+                return ResourceManager.GetString("Wel10", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Finally, fuck me!.
+        /// </summary>
+        public static string Wel11 {
+            get {
+                return ResourceManager.GetString("Wel11", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Finally, fuck you!!!.
+        /// </summary>
+        public static string Wel12 {
+            get {
+                return ResourceManager.GetString("Wel12", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to OH MY GOWD, FUCK YOU PIECE OF SHIT, GO AWAY OF HERE!.
+        /// </summary>
+        public static string Wel13 {
+            get {
+                return ResourceManager.GetString("Wel13", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to It&apos;s your birthday and that&apos;s beautifull!.
+        /// </summary>
+        public static string Wel2 {
+            get {
+                return ResourceManager.GetString("Wel2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Here, I preper a little game for you, the only thing you need to do is win the game..
+        /// </summary>
+        public static string Wel3 {
+            get {
+                return ResourceManager.GetString("Wel3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to If you reach the end, you will receive something, but you, and I, don&apos;t know what..
+        /// </summary>
+        public static string Wel4 {
+            get {
+                return ResourceManager.GetString("Wel4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to If you don&apos;t, go fuck yourself, ok?.
+        /// </summary>
+        public static string Wel5 {
+            get {
+                return ResourceManager.GetString("Wel5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Are you ready to go?.
+        /// </summary>
+        public static string Wel6 {
+            get {
+                return ResourceManager.GetString("Wel6", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ok, it&apos;s loading....
+        /// </summary>
+        public static string Wel7 {
+            get {
+                return ResourceManager.GetString("Wel7", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ohh, fuck, I almost forgot..
+        /// </summary>
+        public static string Wel8 {
+            get {
+                return ResourceManager.GetString("Wel8", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to For each &apos;level&apos; you&apos;ll have a tip, but it&apos;s only appers if you click on the button in the screen..
+        /// </summary>
+        public static string Wel9 {
+            get {
+                return ResourceManager.GetString("Wel9", resourceCulture);
             }
         }
     }

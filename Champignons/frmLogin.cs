@@ -83,36 +83,36 @@ namespace Champignons {
 			string sql = string.Empty, sconn = string.Empty;
 			string usu, pwd;
 
-			sconn = "server=sql46.main-hosting.eu;port=3306;uid=u477364118_champ;pwd=champpass99;database=u477364118_champ;";
+			sconn = "server=sql46.main-hosting.eu;port=3306;uid=u477364118_champ;pwd=champpass99;database=u477364118_champ;sslmode=none;";
 
 			MySqlConnection conn = new MySqlConnection( sconn );
 
-			try {
+			//try {
 				usu = txtUser.Text;
 				pwd = txtPass.Text;
 
 				conn.Open();
-				sql = "SELECT COUNT(Cod) FROM tbUser WHERE Usr = @User and Pss = @Pass";
+				sql = "SELECT COUNT(Cod) FROM tbUser WHERE Usr = @Usr and Pss = @Pss";
 
 				MySqlCommand cmd = new MySqlCommand( sql, conn );
 
-				cmd.Parameters.AddWithValue( "@User", MySqlDbType.VarChar ).Value = usu;
-				cmd.Parameters.AddWithValue( "@Pass", MySqlDbType.VarChar ).Value = pwd;
+				cmd.Parameters.Add( "@Usr", MySqlDbType.VarChar ).Value = usu;
+				cmd.Parameters.Add( "@Pss", MySqlDbType.VarChar ).Value = pwd;
 
-				int v = ( int ) cmd.ExecuteScalar();
-				if ( v > 0 ) {
+				long v = ( long ) cmd.ExecuteScalar();
+			if ( v > 0 ) {
 					conn.Close();
 					return 1;
 				} else {
 					conn.Close();
 					return 2;
 				}
-			} catch ( Exception e ) {
-				MessageBox.Show( Properties.str.ConnError, Properties.str.Error, MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1 );
-				MessageBox.Show( e.Message, Properties.str.Error, MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1 );
-				try { conn.Close(); } catch { }
-				return 0;
-			}
+			//} catch ( Exception e ) {
+			//	MessageBox.Show( Properties.str.ConnError, Properties.str.Error, MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1 );
+			//	MessageBox.Show( e.Message, Properties.str.Error, MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1 );
+			//	try { conn.Close(); } catch { }
+			//	return 0;
+			//}
 		}
 
 		private void btnLog_KeyPress( object sender, KeyPressEventArgs e ) { }
