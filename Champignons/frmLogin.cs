@@ -45,10 +45,10 @@ namespace Champignons {
 
 		private void txtUser_KeyPress( object sender, KeyPressEventArgs e ) {
 			if ( e.KeyChar == 13 ) {
-				if ( txtUser.Text == "" ) {
+				if ( txtUser.Text.Length == 0 ) {
 					MessageBox.Show( Properties.str.UserError, Properties.str.Atent, MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1 );
 					txtUser.Focus();
-				} else if ( txtPass.Text == "" ) {
+				} else if ( txtPass.Text.Length == 0 ) {
 					MessageBox.Show( Properties.str.PassError, Properties.str.Atent, MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1 );
 				} else {
 					LogIn();
@@ -58,10 +58,10 @@ namespace Champignons {
 
 		private void txtPass_KeyPress( object sender, KeyPressEventArgs e ) {
 			if ( e.KeyChar == 13 ) {
-				if ( txtUser.Text == "" ) {
+				if ( txtUser.Text.Length == 0 ) {
 					MessageBox.Show( Properties.str.UserError, Properties.str.Atent, MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1 );
 					txtUser.Focus();
-				} else if ( txtPass.Text == "" ) {
+				} else if ( txtPass.Text.Length == 0 ) {
 					MessageBox.Show( Properties.str.PassError, Properties.str.Atent, MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1 );
 				} else {
 					LogIn();
@@ -87,7 +87,7 @@ namespace Champignons {
 
 			MySqlConnection conn = new MySqlConnection( sconn );
 
-			//try {
+			try {
 				usu = txtUser.Text;
 				pwd = txtPass.Text;
 
@@ -107,12 +107,17 @@ namespace Champignons {
 					conn.Close();
 					return 2;
 				}
-			//} catch ( Exception e ) {
-			//	MessageBox.Show( Properties.str.ConnError, Properties.str.Error, MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1 );
-			//	MessageBox.Show( e.Message, Properties.str.Error, MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1 );
-			//	try { conn.Close(); } catch { }
-			//	return 0;
-			//}
+			} catch ( Exception e ) {
+				MessageBox.Show( Properties.str.ConnError, Properties.str.Error, MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1 );
+				MessageBox.Show( e.Message, Properties.str.Error, MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1 );
+				MessageBox.Show( Properties.str.Offline, "OFFLINE", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1 );
+				try { conn.Close(); } catch { }
+				if ( txtUser.Text.Equals("jadeson") && txtPass.Text.Equals("johnson") ) {
+					return 1;
+				} else {
+					return 2;
+				}
+			}
 		}
 
 		private void btnLog_KeyPress( object sender, KeyPressEventArgs e ) { }

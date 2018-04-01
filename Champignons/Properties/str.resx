@@ -120,6 +120,9 @@
   <data name="Atent" xml:space="preserve">
     <value>Atention!</value>
   </data>
+  <data name="BtnY" xml:space="preserve">
+    <value>&gt; Yes, I'm ready! &lt;</value>
+  </data>
   <data name="Cancel" xml:space="preserve">
     <value>Cancel</value>
   </data>
@@ -176,6 +179,12 @@
   </data>
   <data name="LvlEnd" xml:space="preserve">
     <value>Level Zero</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>Next</value>
+  </data>
+  <data name="Offline" xml:space="preserve">
+    <value>Trying to work offline.</value>
   </data>
   <data name="Pass" xml:space="preserve">
     <value>Password</value>

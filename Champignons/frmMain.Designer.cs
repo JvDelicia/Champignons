@@ -23,28 +23,187 @@
 		/// the contents of this method with the code editor.
 		/// </summary>
 		private void InitializeComponent() {
+			this.components = new System.ComponentModel.Container();
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
 			this.pnl1 = new System.Windows.Forms.Panel();
+			this.pnl2 = new System.Windows.Forms.Panel();
+			this.prgLoad = new MaterialSkin.Controls.MaterialProgressBar();
+			this.btnYes = new MaterialSkin.Controls.MaterialFlatButton();
+			this.lblWel7 = new MaterialSkin.Controls.MaterialLabel();
+			this.lblWel6 = new MaterialSkin.Controls.MaterialLabel();
+			this.lblWel5 = new MaterialSkin.Controls.MaterialLabel();
+			this.lblWel4 = new MaterialSkin.Controls.MaterialLabel();
+			this.lblWel3 = new MaterialSkin.Controls.MaterialLabel();
+			this.lblWel2 = new MaterialSkin.Controls.MaterialLabel();
 			this.lblWel1 = new MaterialSkin.Controls.MaterialLabel();
-			this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
-			this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
-			this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
-			this.materialLabel4 = new MaterialSkin.Controls.MaterialLabel();
+			this.btnGo = new MaterialSkin.Controls.MaterialRaisedButton();
+			this.tmrPrg = new System.Windows.Forms.Timer(this.components);
+			this.tmrStt = new System.Windows.Forms.Timer(this.components);
 			this.pnl1.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// pnl1
 			// 
-			this.pnl1.Controls.Add(this.materialLabel4);
-			this.pnl1.Controls.Add(this.materialLabel3);
-			this.pnl1.Controls.Add(this.materialLabel2);
-			this.pnl1.Controls.Add(this.materialLabel1);
+			this.pnl1.Controls.Add(this.pnl2);
+			this.pnl1.Controls.Add(this.prgLoad);
+			this.pnl1.Controls.Add(this.btnYes);
+			this.pnl1.Controls.Add(this.lblWel7);
+			this.pnl1.Controls.Add(this.lblWel6);
+			this.pnl1.Controls.Add(this.lblWel5);
+			this.pnl1.Controls.Add(this.lblWel4);
+			this.pnl1.Controls.Add(this.lblWel3);
+			this.pnl1.Controls.Add(this.lblWel2);
 			this.pnl1.Controls.Add(this.lblWel1);
+			this.pnl1.Controls.Add(this.btnGo);
 			this.pnl1.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.pnl1.Location = new System.Drawing.Point(0, 0);
 			this.pnl1.Name = "pnl1";
 			this.pnl1.Size = new System.Drawing.Size(800, 500);
 			this.pnl1.TabIndex = 0;
+			// 
+			// pnl2
+			// 
+			this.pnl2.Location = new System.Drawing.Point(353, 149);
+			this.pnl2.Name = "pnl2";
+			this.pnl2.Size = new System.Drawing.Size(200, 100);
+			this.pnl2.TabIndex = 1;
+			this.pnl2.Visible = false;
+			// 
+			// prgLoad
+			// 
+			this.prgLoad.Cursor = System.Windows.Forms.Cursors.AppStarting;
+			this.prgLoad.Depth = 0;
+			this.prgLoad.Dock = System.Windows.Forms.DockStyle.Bottom;
+			this.prgLoad.Location = new System.Drawing.Point(0, 459);
+			this.prgLoad.MouseState = MaterialSkin.MouseState.HOVER;
+			this.prgLoad.Name = "prgLoad";
+			this.prgLoad.Size = new System.Drawing.Size(800, 5);
+			this.prgLoad.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
+			this.prgLoad.TabIndex = 9;
+			this.prgLoad.Visible = false;
+			// 
+			// btnYes
+			// 
+			this.btnYes.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+			this.btnYes.AutoSize = true;
+			this.btnYes.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+			this.btnYes.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.btnYes.Depth = 0;
+			this.btnYes.Icon = null;
+			this.btnYes.Location = new System.Drawing.Point(0, 338);
+			this.btnYes.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+			this.btnYes.MaximumSize = new System.Drawing.Size(800, 0);
+			this.btnYes.MinimumSize = new System.Drawing.Size(800, 0);
+			this.btnYes.MouseState = MaterialSkin.MouseState.HOVER;
+			this.btnYes.Name = "btnYes";
+			this.btnYes.Primary = false;
+			this.btnYes.Size = new System.Drawing.Size(800, 36);
+			this.btnYes.TabIndex = 8;
+			this.btnYes.UseVisualStyleBackColor = true;
+			this.btnYes.Visible = false;
+			this.btnYes.Click += new System.EventHandler(this.btnYes_Click);
+			// 
+			// lblWel7
+			// 
+			this.lblWel7.AutoSize = true;
+			this.lblWel7.Depth = 0;
+			this.lblWel7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.lblWel7.Font = new System.Drawing.Font("Roboto", 11F);
+			this.lblWel7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.lblWel7.Location = new System.Drawing.Point(0, 430);
+			this.lblWel7.MaximumSize = new System.Drawing.Size(800, 0);
+			this.lblWel7.MinimumSize = new System.Drawing.Size(800, 0);
+			this.lblWel7.MouseState = MaterialSkin.MouseState.HOVER;
+			this.lblWel7.Name = "lblWel7";
+			this.lblWel7.Size = new System.Drawing.Size(800, 19);
+			this.lblWel7.TabIndex = 7;
+			this.lblWel7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			this.lblWel7.UseMnemonic = false;
+			// 
+			// lblWel6
+			// 
+			this.lblWel6.AutoSize = true;
+			this.lblWel6.Depth = 0;
+			this.lblWel6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.lblWel6.Font = new System.Drawing.Font("Roboto", 11F);
+			this.lblWel6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.lblWel6.Location = new System.Drawing.Point(0, 313);
+			this.lblWel6.MaximumSize = new System.Drawing.Size(800, 0);
+			this.lblWel6.MinimumSize = new System.Drawing.Size(800, 0);
+			this.lblWel6.MouseState = MaterialSkin.MouseState.HOVER;
+			this.lblWel6.Name = "lblWel6";
+			this.lblWel6.Size = new System.Drawing.Size(800, 19);
+			this.lblWel6.TabIndex = 6;
+			this.lblWel6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			this.lblWel6.UseMnemonic = false;
+			// 
+			// lblWel5
+			// 
+			this.lblWel5.AutoSize = true;
+			this.lblWel5.Depth = 0;
+			this.lblWel5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.lblWel5.Font = new System.Drawing.Font("Roboto", 11F);
+			this.lblWel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.lblWel5.Location = new System.Drawing.Point(0, 209);
+			this.lblWel5.MaximumSize = new System.Drawing.Size(800, 0);
+			this.lblWel5.MinimumSize = new System.Drawing.Size(800, 0);
+			this.lblWel5.MouseState = MaterialSkin.MouseState.HOVER;
+			this.lblWel5.Name = "lblWel5";
+			this.lblWel5.Size = new System.Drawing.Size(800, 19);
+			this.lblWel5.TabIndex = 4;
+			this.lblWel5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			this.lblWel5.UseMnemonic = false;
+			// 
+			// lblWel4
+			// 
+			this.lblWel4.AutoSize = true;
+			this.lblWel4.Depth = 0;
+			this.lblWel4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.lblWel4.Font = new System.Drawing.Font("Roboto", 11F);
+			this.lblWel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.lblWel4.Location = new System.Drawing.Point(0, 173);
+			this.lblWel4.MaximumSize = new System.Drawing.Size(800, 0);
+			this.lblWel4.MinimumSize = new System.Drawing.Size(800, 0);
+			this.lblWel4.MouseState = MaterialSkin.MouseState.HOVER;
+			this.lblWel4.Name = "lblWel4";
+			this.lblWel4.Size = new System.Drawing.Size(800, 19);
+			this.lblWel4.TabIndex = 3;
+			this.lblWel4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			this.lblWel4.UseMnemonic = false;
+			// 
+			// lblWel3
+			// 
+			this.lblWel3.AutoSize = true;
+			this.lblWel3.Depth = 0;
+			this.lblWel3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.lblWel3.Font = new System.Drawing.Font("Roboto", 11F);
+			this.lblWel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.lblWel3.Location = new System.Drawing.Point(0, 138);
+			this.lblWel3.MaximumSize = new System.Drawing.Size(800, 0);
+			this.lblWel3.MinimumSize = new System.Drawing.Size(800, 0);
+			this.lblWel3.MouseState = MaterialSkin.MouseState.HOVER;
+			this.lblWel3.Name = "lblWel3";
+			this.lblWel3.Size = new System.Drawing.Size(800, 19);
+			this.lblWel3.TabIndex = 2;
+			this.lblWel3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			this.lblWel3.UseMnemonic = false;
+			// 
+			// lblWel2
+			// 
+			this.lblWel2.AutoSize = true;
+			this.lblWel2.Depth = 0;
+			this.lblWel2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.lblWel2.Font = new System.Drawing.Font("Roboto", 11F);
+			this.lblWel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.lblWel2.Location = new System.Drawing.Point(0, 75);
+			this.lblWel2.MaximumSize = new System.Drawing.Size(800, 0);
+			this.lblWel2.MinimumSize = new System.Drawing.Size(800, 0);
+			this.lblWel2.MouseState = MaterialSkin.MouseState.HOVER;
+			this.lblWel2.Name = "lblWel2";
+			this.lblWel2.Size = new System.Drawing.Size(800, 19);
+			this.lblWel2.TabIndex = 1;
+			this.lblWel2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			this.lblWel2.UseMnemonic = false;
 			// 
 			// lblWel1
 			// 
@@ -60,81 +219,37 @@
 			this.lblWel1.Name = "lblWel1";
 			this.lblWel1.Size = new System.Drawing.Size(800, 19);
 			this.lblWel1.TabIndex = 0;
-			this.lblWel1.Text = "materialLabel1";
 			this.lblWel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			this.lblWel1.UseMnemonic = false;
 			// 
-			// materialLabel1
+			// btnGo
 			// 
-			this.materialLabel1.AutoSize = true;
-			this.materialLabel1.Depth = 0;
-			this.materialLabel1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.materialLabel1.Font = new System.Drawing.Font("Roboto", 11F);
-			this.materialLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-			this.materialLabel1.Location = new System.Drawing.Point(0, 77);
-			this.materialLabel1.MaximumSize = new System.Drawing.Size(800, 0);
-			this.materialLabel1.MinimumSize = new System.Drawing.Size(800, 0);
-			this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
-			this.materialLabel1.Name = "materialLabel1";
-			this.materialLabel1.Size = new System.Drawing.Size(800, 19);
-			this.materialLabel1.TabIndex = 1;
-			this.materialLabel1.Text = "materialLabel1";
-			this.materialLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-			this.materialLabel1.UseMnemonic = false;
+			this.btnGo.AutoSize = true;
+			this.btnGo.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+			this.btnGo.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.btnGo.Depth = 0;
+			this.btnGo.Dock = System.Windows.Forms.DockStyle.Bottom;
+			this.btnGo.Icon = null;
+			this.btnGo.Location = new System.Drawing.Point(0, 464);
+			this.btnGo.MouseState = MaterialSkin.MouseState.HOVER;
+			this.btnGo.Name = "btnGo";
+			this.btnGo.Primary = true;
+			this.btnGo.Size = new System.Drawing.Size(800, 36);
+			this.btnGo.TabIndex = 10;
+			this.btnGo.Text = "GO!";
+			this.btnGo.UseVisualStyleBackColor = true;
+			this.btnGo.Visible = false;
+			this.btnGo.Click += new System.EventHandler(this.btnGo_Click);
 			// 
-			// materialLabel2
+			// tmrPrg
 			// 
-			this.materialLabel2.AutoSize = true;
-			this.materialLabel2.Depth = 0;
-			this.materialLabel2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.materialLabel2.Font = new System.Drawing.Font("Roboto", 11F);
-			this.materialLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-			this.materialLabel2.Location = new System.Drawing.Point(0, 110);
-			this.materialLabel2.MaximumSize = new System.Drawing.Size(800, 0);
-			this.materialLabel2.MinimumSize = new System.Drawing.Size(800, 0);
-			this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
-			this.materialLabel2.Name = "materialLabel2";
-			this.materialLabel2.Size = new System.Drawing.Size(800, 19);
-			this.materialLabel2.TabIndex = 2;
-			this.materialLabel2.Text = "materialLabel1";
-			this.materialLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-			this.materialLabel2.UseMnemonic = false;
+			this.tmrPrg.Interval = 1000;
+			this.tmrPrg.Tick += new System.EventHandler(this.tmrPrg_Tick);
 			// 
-			// materialLabel3
+			// tmrStt
 			// 
-			this.materialLabel3.AutoSize = true;
-			this.materialLabel3.Depth = 0;
-			this.materialLabel3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.materialLabel3.Font = new System.Drawing.Font("Roboto", 11F);
-			this.materialLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-			this.materialLabel3.Location = new System.Drawing.Point(0, 146);
-			this.materialLabel3.MaximumSize = new System.Drawing.Size(800, 0);
-			this.materialLabel3.MinimumSize = new System.Drawing.Size(800, 0);
-			this.materialLabel3.MouseState = MaterialSkin.MouseState.HOVER;
-			this.materialLabel3.Name = "materialLabel3";
-			this.materialLabel3.Size = new System.Drawing.Size(800, 19);
-			this.materialLabel3.TabIndex = 3;
-			this.materialLabel3.Text = "materialLabel1";
-			this.materialLabel3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-			this.materialLabel3.UseMnemonic = false;
-			// 
-			// materialLabel4
-			// 
-			this.materialLabel4.AutoSize = true;
-			this.materialLabel4.Depth = 0;
-			this.materialLabel4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.materialLabel4.Font = new System.Drawing.Font("Roboto", 11F);
-			this.materialLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-			this.materialLabel4.Location = new System.Drawing.Point(0, 201);
-			this.materialLabel4.MaximumSize = new System.Drawing.Size(800, 0);
-			this.materialLabel4.MinimumSize = new System.Drawing.Size(800, 0);
-			this.materialLabel4.MouseState = MaterialSkin.MouseState.HOVER;
-			this.materialLabel4.Name = "materialLabel4";
-			this.materialLabel4.Size = new System.Drawing.Size(800, 19);
-			this.materialLabel4.TabIndex = 4;
-			this.materialLabel4.Text = "materialLabel1";
-			this.materialLabel4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-			this.materialLabel4.UseMnemonic = false;
+			this.tmrStt.Interval = 10000;
+			this.tmrStt.Tick += new System.EventHandler(this.tmrStt_Tick);
 			// 
 			// frmMain
 			// 
@@ -159,9 +274,17 @@
 
 		private System.Windows.Forms.Panel pnl1;
 		private MaterialSkin.Controls.MaterialLabel lblWel1;
-		private MaterialSkin.Controls.MaterialLabel materialLabel4;
-		private MaterialSkin.Controls.MaterialLabel materialLabel3;
-		private MaterialSkin.Controls.MaterialLabel materialLabel2;
-		private MaterialSkin.Controls.MaterialLabel materialLabel1;
+		private MaterialSkin.Controls.MaterialLabel lblWel5;
+		private MaterialSkin.Controls.MaterialLabel lblWel4;
+		private MaterialSkin.Controls.MaterialLabel lblWel3;
+		private MaterialSkin.Controls.MaterialLabel lblWel2;
+		private MaterialSkin.Controls.MaterialLabel lblWel7;
+		private MaterialSkin.Controls.MaterialLabel lblWel6;
+		private MaterialSkin.Controls.MaterialProgressBar prgLoad;
+		private MaterialSkin.Controls.MaterialFlatButton btnYes;
+		private System.Windows.Forms.Timer tmrPrg;
+		private System.Windows.Forms.Timer tmrStt;
+		private MaterialSkin.Controls.MaterialRaisedButton btnGo;
+		private System.Windows.Forms.Panel pnl2;
 	}
 }

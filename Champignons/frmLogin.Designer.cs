@@ -84,6 +84,7 @@
 			this.txtPass.SelectionStart = 0;
 			this.txtPass.TabStop = false;
 			this.txtPass.UseSystemPasswordChar = true;
+			this.txtPass.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPass_KeyPress);
 			// 
 			// btnLog
 			// 

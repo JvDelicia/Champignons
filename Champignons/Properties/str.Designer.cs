@@ -70,6 +70,15 @@ namespace Champignons.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to &gt; Yes, I&apos;m ready! &lt;.
+        /// </summary>
+        public static string BtnY {
+            get {
+                return ResourceManager.GetString("BtnY", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Cancel.
         /// </summary>
         public static string Cancel {
@@ -237,6 +246,24 @@ namespace Champignons.Properties {
         public static string LvlEnd {
             get {
                 return ResourceManager.GetString("LvlEnd", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Next.
+        /// </summary>
+        public static string Next {
+            get {
+                return ResourceManager.GetString("Next", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Trying to work offline..
+        /// </summary>
+        public static string Offline {
+            get {
+                return ResourceManager.GetString("Offline", resourceCulture);
             }
         }
         
