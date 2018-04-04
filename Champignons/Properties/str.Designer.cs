@@ -286,7 +286,7 @@ namespace Champignons.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to What&apos;s the favourite food for John?.
         /// </summary>
         public static string Qst1 {
             get {
@@ -295,7 +295,7 @@ namespace Champignons.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to Hamburger.
         /// </summary>
         public static string Qst1Res1 {
             get {
@@ -304,7 +304,7 @@ namespace Champignons.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to Beef and cream (Strogonoff).
         /// </summary>
         public static string Qst1Res2 {
             get {
@@ -313,7 +313,7 @@ namespace Champignons.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to Lasagna.
         /// </summary>
         public static string Qst1Res3 {
             get {
@@ -322,7 +322,7 @@ namespace Champignons.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to Your mother.
         /// </summary>
         public static string Qst1Res4 {
             get {
@@ -331,7 +331,7 @@ namespace Champignons.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to What&apos;s the online nickname of John? (In Russian).
         /// </summary>
         public static string Qst2 {
             get {
@@ -340,7 +340,7 @@ namespace Champignons.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to Завитоски.
         /// </summary>
         public static string Qst2Res1 {
             get {
@@ -349,7 +349,7 @@ namespace Champignons.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to ЗамьбрОвоски.
         /// </summary>
         public static string Qst2Res2 {
             get {
@@ -358,7 +358,7 @@ namespace Champignons.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to Я люблю тебя.
         /// </summary>
         public static string Qst2Res3 {
             get {
@@ -367,7 +367,7 @@ namespace Champignons.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to Яблоко.
         /// </summary>
         public static string Qst2Res4 {
             get {
@@ -376,7 +376,7 @@ namespace Champignons.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to As for John&apos;s religion, what&apos;s her name?.
         /// </summary>
         public static string Qst3 {
             get {
@@ -385,7 +385,16 @@ namespace Champignons.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to Confirm.
+        /// </summary>
+        public static string Qst3Res {
+            get {
+                return ResourceManager.GetString("Qst3Res", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to What&apos;s John favourite class?.
         /// </summary>
         public static string Qst4 {
             get {
@@ -394,7 +403,7 @@ namespace Champignons.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to What&apos;s the name of the sweety you like more than &quot;Brigadeiro&quot;?.
         /// </summary>
         public static string Qst5 {
             get {
@@ -417,6 +426,15 @@ namespace Champignons.Properties {
         public static string Rights {
             get {
                 return ResourceManager.GetString("Rights", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to OH MY GAWD, FUCK YOU PIECE OF SHIT, GO AWAY OF HERE!.
+        /// </summary>
+        public static string SRRY {
+            get {
+                return ResourceManager.GetString("SRRY", resourceCulture);
             }
         }
         
@@ -444,42 +462,6 @@ namespace Champignons.Properties {
         public static string Wel1 {
             get {
                 return ResourceManager.GetString("Wel1", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to I think you can go now..
-        /// </summary>
-        public static string Wel10 {
-            get {
-                return ResourceManager.GetString("Wel10", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Finally, fuck me!.
-        /// </summary>
-        public static string Wel11 {
-            get {
-                return ResourceManager.GetString("Wel11", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Finally, fuck you!!!.
-        /// </summary>
-        public static string Wel12 {
-            get {
-                return ResourceManager.GetString("Wel12", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to OH MY GOWD, FUCK YOU PIECE OF SHIT, GO AWAY OF HERE!.
-        /// </summary>
-        public static string Wel13 {
-            get {
-                return ResourceManager.GetString("Wel13", resourceCulture);
             }
         }
         
@@ -538,20 +520,11 @@ namespace Champignons.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Ohh, fuck, I almost forgot..
+        ///   Looks up a localized string similar to Wrong....
         /// </summary>
-        public static string Wel8 {
+        public static string Wng {
             get {
-                return ResourceManager.GetString("Wel8", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to For each &apos;level&apos; you&apos;ll have a tip, but it&apos;s only appers if you click on the button in the screen..
-        /// </summary>
-        public static string Wel9 {
-            get {
-                return ResourceManager.GetString("Wel9", resourceCulture);
+                return ResourceManager.GetString("Wng", resourceCulture);
             }
         }
     }

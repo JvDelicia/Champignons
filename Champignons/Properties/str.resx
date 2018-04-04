@@ -193,49 +193,55 @@
     <value>You must type your password!</value>
   </data>
   <data name="Qst1" xml:space="preserve">
-    <value />
+    <value>What's the favourite food for John?</value>
   </data>
   <data name="Qst1Res1" xml:space="preserve">
-    <value />
+    <value>Hamburger</value>
   </data>
   <data name="Qst1Res2" xml:space="preserve">
-    <value />
+    <value>Beef and cream (Strogonoff)</value>
   </data>
   <data name="Qst1Res3" xml:space="preserve">
-    <value />
+    <value>Lasagna</value>
   </data>
   <data name="Qst1Res4" xml:space="preserve">
-    <value />
+    <value>Your mother</value>
   </data>
   <data name="Qst2" xml:space="preserve">
-    <value />
+    <value>What's the online nickname of John? (In Russian)</value>
   </data>
   <data name="Qst2Res1" xml:space="preserve">
-    <value />
+    <value>Завитоски</value>
   </data>
   <data name="Qst2Res2" xml:space="preserve">
-    <value />
+    <value>ЗамьбрОвоски</value>
   </data>
   <data name="Qst2Res3" xml:space="preserve">
-    <value />
+    <value>Я люблю тебя</value>
   </data>
   <data name="Qst2Res4" xml:space="preserve">
-    <value />
+    <value>Яблоко</value>
   </data>
   <data name="Qst3" xml:space="preserve">
-    <value />
+    <value>As for John's religion, what's her name?</value>
+  </data>
+  <data name="Qst3Res" xml:space="preserve">
+    <value>Confirm</value>
   </data>
   <data name="Qst4" xml:space="preserve">
-    <value />
+    <value>What's John favourite class?</value>
   </data>
   <data name="Qst5" xml:space="preserve">
-    <value />
+    <value>What's the name of the sweety you like more than "Brigadeiro"?</value>
   </data>
   <data name="QuestLeave" xml:space="preserve">
     <value>Leave?</value>
   </data>
   <data name="Rights" xml:space="preserve">
     <value>Champignons © 2018 ALL RIGHTS RESERVERD</value>
+  </data>
+  <data name="SRRY" xml:space="preserve">
+    <value>OH MY GAWD, FUCK YOU PIECE OF SHIT, GO AWAY OF HERE!</value>
   </data>
   <data name="User" xml:space="preserve">
     <value>Username</value>
@@ -245,18 +251,6 @@
   </data>
   <data name="Wel1" xml:space="preserve">
     <value>Welcome, </value>
-  </data>
-  <data name="Wel10" xml:space="preserve">
-    <value>I think you can go now.</value>
-  </data>
-  <data name="Wel11" xml:space="preserve">
-    <value>Finally, fuck me!</value>
-  </data>
-  <data name="Wel12" xml:space="preserve">
-    <value>Finally, fuck you!!!</value>
-  </data>
-  <data name="Wel13" xml:space="preserve">
-    <value>OH MY GOWD, FUCK YOU PIECE OF SHIT, GO AWAY OF HERE!</value>
   </data>
   <data name="Wel2" xml:space="preserve">
     <value>It's your birthday and that's beautifull!</value>
@@ -276,10 +270,7 @@
   <data name="Wel7" xml:space="preserve">
     <value>Ok, it's loading...</value>
   </data>
-  <data name="Wel8" xml:space="preserve">
-    <value>Ohh, fuck, I almost forgot.</value>
-  </data>
-  <data name="Wel9" xml:space="preserve">
-    <value>For each 'level' you'll have a tip, but it's only appers if you click on the button in the screen.</value>
+  <data name="Wng" xml:space="preserve">
+    <value>Wrong...</value>
   </data>
 </root>
