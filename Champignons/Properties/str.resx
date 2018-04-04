@@ -192,6 +192,45 @@
   <data name="PassError" xml:space="preserve">
     <value>You must type your password!</value>
   </data>
+  <data name="Qst1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Qst1Res1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Qst1Res2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Qst1Res3" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Qst1Res4" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Qst2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Qst2Res1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Qst2Res2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Qst2Res3" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Qst2Res4" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Qst3" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Qst4" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Qst5" xml:space="preserve">
+    <value />
+  </data>
   <data name="QuestLeave" xml:space="preserve">
     <value>Leave?</value>
   </data>

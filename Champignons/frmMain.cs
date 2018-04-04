@@ -44,7 +44,12 @@ namespace Champignons {
 
 		private void btnGo_Click( object sender, EventArgs e ) {
 			pnl1.Visible = false;
+			pnl2_Start();
+		}
+
+		private void pnl2_Start() {
 			pnl2.Visible = true;
+			lblLvl1.Text = Properties.str.Lvl1.ToUpper();
 		}
 	}
 }

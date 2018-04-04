@@ -286,6 +286,123 @@ namespace Champignons.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string Qst1 {
+            get {
+                return ResourceManager.GetString("Qst1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string Qst1Res1 {
+            get {
+                return ResourceManager.GetString("Qst1Res1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string Qst1Res2 {
+            get {
+                return ResourceManager.GetString("Qst1Res2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string Qst1Res3 {
+            get {
+                return ResourceManager.GetString("Qst1Res3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string Qst1Res4 {
+            get {
+                return ResourceManager.GetString("Qst1Res4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string Qst2 {
+            get {
+                return ResourceManager.GetString("Qst2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string Qst2Res1 {
+            get {
+                return ResourceManager.GetString("Qst2Res1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string Qst2Res2 {
+            get {
+                return ResourceManager.GetString("Qst2Res2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string Qst2Res3 {
+            get {
+                return ResourceManager.GetString("Qst2Res3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string Qst2Res4 {
+            get {
+                return ResourceManager.GetString("Qst2Res4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string Qst3 {
+            get {
+                return ResourceManager.GetString("Qst3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string Qst4 {
+            get {
+                return ResourceManager.GetString("Qst4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string Qst5 {
+            get {
+                return ResourceManager.GetString("Qst5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Leave?.
         /// </summary>
         public static string QuestLeave {

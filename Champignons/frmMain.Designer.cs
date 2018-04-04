@@ -27,6 +27,8 @@
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
 			this.pnl1 = new System.Windows.Forms.Panel();
 			this.pnl2 = new System.Windows.Forms.Panel();
+			this.lblQst1 = new MaterialSkin.Controls.MaterialLabel();
+			this.lblLvl1 = new System.Windows.Forms.Label();
 			this.prgLoad = new MaterialSkin.Controls.MaterialProgressBar();
 			this.btnYes = new MaterialSkin.Controls.MaterialFlatButton();
 			this.lblWel7 = new MaterialSkin.Controls.MaterialLabel();
@@ -40,6 +42,7 @@
 			this.tmrPrg = new System.Windows.Forms.Timer(this.components);
 			this.tmrStt = new System.Windows.Forms.Timer(this.components);
 			this.pnl1.SuspendLayout();
+			this.pnl2.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// pnl1
@@ -63,11 +66,44 @@
 			// 
 			// pnl2
 			// 
-			this.pnl2.Location = new System.Drawing.Point(353, 149);
+			this.pnl2.Controls.Add(this.lblQst1);
+			this.pnl2.Controls.Add(this.lblLvl1);
+			this.pnl2.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.pnl2.Location = new System.Drawing.Point(0, 0);
 			this.pnl2.Name = "pnl2";
-			this.pnl2.Size = new System.Drawing.Size(200, 100);
+			this.pnl2.Size = new System.Drawing.Size(800, 459);
 			this.pnl2.TabIndex = 1;
 			this.pnl2.Visible = false;
+			// 
+			// lblQst1
+			// 
+			this.lblQst1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+			this.lblQst1.AutoSize = true;
+			this.lblQst1.Depth = 0;
+			this.lblQst1.Font = new System.Drawing.Font("Roboto", 11F);
+			this.lblQst1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.lblQst1.Location = new System.Drawing.Point(1, 138);
+			this.lblQst1.MaximumSize = new System.Drawing.Size(800, 0);
+			this.lblQst1.MinimumSize = new System.Drawing.Size(800, 0);
+			this.lblQst1.MouseState = MaterialSkin.MouseState.HOVER;
+			this.lblQst1.Name = "lblQst1";
+			this.lblQst1.Size = new System.Drawing.Size(800, 19);
+			this.lblQst1.TabIndex = 1;
+			this.lblQst1.Text = "materialLabel1";
+			this.lblQst1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			// 
+			// lblLvl1
+			// 
+			this.lblLvl1.AutoSize = true;
+			this.lblLvl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lblLvl1.Location = new System.Drawing.Point(0, 9);
+			this.lblLvl1.MaximumSize = new System.Drawing.Size(800, 0);
+			this.lblLvl1.MinimumSize = new System.Drawing.Size(800, 0);
+			this.lblLvl1.Name = "lblLvl1";
+			this.lblLvl1.Size = new System.Drawing.Size(800, 25);
+			this.lblLvl1.TabIndex = 0;
+			this.lblLvl1.Text = "label1";
+			this.lblLvl1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			// 
 			// prgLoad
 			// 
@@ -78,7 +114,6 @@
 			this.prgLoad.MouseState = MaterialSkin.MouseState.HOVER;
 			this.prgLoad.Name = "prgLoad";
 			this.prgLoad.Size = new System.Drawing.Size(800, 5);
-			this.prgLoad.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
 			this.prgLoad.TabIndex = 9;
 			this.prgLoad.Visible = false;
 			// 
@@ -266,6 +301,8 @@
 			this.Text = "Champignons";
 			this.pnl1.ResumeLayout(false);
 			this.pnl1.PerformLayout();
+			this.pnl2.ResumeLayout(false);
+			this.pnl2.PerformLayout();
 			this.ResumeLayout(false);
 
 		}
@@ -286,5 +323,7 @@
 		private System.Windows.Forms.Timer tmrStt;
 		private MaterialSkin.Controls.MaterialRaisedButton btnGo;
 		private System.Windows.Forms.Panel pnl2;
+		private System.Windows.Forms.Label lblLvl1;
+		private MaterialSkin.Controls.MaterialLabel lblQst1;
 	}
 }
