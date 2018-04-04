@@ -21,13 +21,6 @@ namespace Champignons {
 			lblWel6.Text = Properties.str.Wel6;
 			btnYes.Text = Properties.str.BtnY;
 			btnYes.Visible = true;
-		}
-
-		private void btnYes_Click( object sender, EventArgs e ) {
-			lblWel7.Text = Properties.str.Wel7;
-			pnl1.Cursor = Cursors.AppStarting;
-			prgLoad.Visible = true;
-			tmrPrg.Start();
 			lblLvl1.Text = Properties.str.Lvl1.ToUpper();
 			lblQst1.Text = Properties.str.Qst1;
 			bntQ11.Text = Properties.str.Qst1Res1;
@@ -49,6 +42,19 @@ namespace Champignons {
 			lblLvl5.Text = Properties.str.Lvl5.ToUpper();
 			lblQst5.Text = Properties.str.Qst5;
 			btnQst5.Text = Properties.str.Qst3Res;
+			pnl1.Visible = true;
+			pnl2.Visible = false;
+			pnl3.Visible = false;
+			pnl4.Visible = false;
+			pnl5.Visible = false;
+			pnl6.Visible = false;
+		}
+
+		private void btnYes_Click( object sender, EventArgs e ) {
+			lblWel7.Text = Properties.str.Wel7;
+			pnl1.Cursor = Cursors.AppStarting;
+			prgLoad.Visible = true;
+			tmrPrg.Start();
 			tmrStt.Start();
 		}
 
@@ -61,11 +67,14 @@ namespace Champignons {
 			pnl1.Cursor = Cursors.Default;
 			lblWel7.Visible = false;
 			prgLoad.Visible = false;
+			tmrPrg.Stop();
+			tmrStt.Stop();
 		}
 
 		private void btnGo_Click( object sender, EventArgs e ) {
 			pnl1.Visible = false;
 			pnl2.Visible = true;
+			pnl2.BringToFront();
 		}
 
 		private void Wrong() {
@@ -87,39 +96,46 @@ namespace Champignons {
 		private void bntQ13_Click( object sender, EventArgs e ) {
 			pnl2.Visible = false;
 			pnl3.Visible = true;
+			pnl3.BringToFront();
 		}
 
 		private void btnQ21_Click( object sender, EventArgs e ) {
 			Wrong();
 			pnl3.Visible = false;
 			pnl2.Visible = true;
+			pnl2.BringToFront();
 		}
 
 		private void btnQ23_Click( object sender, EventArgs e ) {
 			Wrong();
 			pnl3.Visible = false;
 			pnl2.Visible = true;
+			pnl2.BringToFront();
 		}
 
 		private void btnQ24_Click( object sender, EventArgs e ) {
 			Wrong();
 			pnl3.Visible = false;
 			pnl2.Visible = true;
+			pnl2.BringToFront();
 		}
 
 		private void btnQ22_Click( object sender, EventArgs e ) {
 			pnl3.Visible = false;
 			pnl4.Visible = true;
+			pnl4.BringToFront();
 		}
 
 		private void btnQst3_Click( object sender, EventArgs e ) {
 			if ( txtQst3.Text.ToUpper().Equals("ATEISM") ) {
 				pnl4.Visible = false;
 				pnl5.Visible = true;
+				pnl5.BringToFront();
 			} else {
 				Wrong();
 				pnl4.Visible = false;
 				pnl2.Visible = true;
+				pnl2.BringToFront();
 			}
 		}
 
@@ -127,32 +143,35 @@ namespace Champignons {
 			if ( txtQst4.Text.ToUpper().Equals( "HISTORY" ) ) {
 				pnl5.Visible = false;
 				pnl6.Visible = true;
+				pnl6.BringToFront();
 			} else {
 				Wrong();
 				pnl5.Visible = false;
 				pnl2.Visible = true;
+				pnl2.BringToFront();
 			}
 		}
 
 		private void btnQst5_Click( object sender, EventArgs e ) {
-			if ( txtQst4.Text.ToUpper().Equals( "HISTORY" ) ) {
+			if ( txtQst5.Text.ToUpper().Equals( "BEIJINHO" ) ) {
 				Win();
 			} else {
 				Wrong();
 				pnl6.Visible = false;
 				pnl2.Visible = true;
+				pnl2.BringToFront();
 			}
 		}
 
 		private void Win() {
 			MessageBox.Show( "CONGRATULATIONS!!!!\nYOU WIN THE GAME!\n\n\n\nnow your computer will shutdown :)", "You Win", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1 );
-			System.Diagnostics.Process process = new System.Diagnostics.Process();
-			System.Diagnostics.ProcessStartInfo startInfo = new System.Diagnostics.ProcessStartInfo();
-			startInfo.WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden;
-			startInfo.FileName = "cmd.exe";
-			startInfo.Arguments = "shutdown /h";
-			process.StartInfo = startInfo;
-			process.Start();
+			//System.Diagnostics.Process process = new System.Diagnostics.Process();
+			//System.Diagnostics.ProcessStartInfo startInfo = new System.Diagnostics.ProcessStartInfo();
+			//startInfo.WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden;
+			//startInfo.FileName = "cmd.exe";
+			//startInfo.Arguments = "shutdown /h";
+			//process.StartInfo = startInfo;
+			//process.Start();
 		}
 	}
 }
